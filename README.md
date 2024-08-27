@@ -41,7 +41,7 @@ To run the API locally, use the following command:
 dotnet run
 ```
 
-The API will be accessible at 'http://localhost:5000'.
+The API will be accessible at 'https://localhost:7195'.
 
 ## API Endpoints
 - **GET /api/houseunits**: Retrieve all house units.
