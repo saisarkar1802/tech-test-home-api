@@ -39,7 +39,7 @@ This project is a simple CRUD API designed for managing house units. It is built
 To run the API locally, use the following command:
 ```bash
 dotnet run
-...
+```
 
 The API will be accessible at 'http://localhost:5000'.
 
