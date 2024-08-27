@@ -1,0 +1,89 @@
+2024-08-27 14:23:52.6757|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\shaibal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-27 14:23:53.3515|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7195
+2024-08-27 14:23:53.3515|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5195
+2024-08-27 14:23:53.3515|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-08-27 14:23:53.3515|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-08-27 14:23:53.3515|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\Documents\Personal\Learning\Repos\Boligmappa\tech-test-home-api\HouseUnitAPI\HouseUnitAPI
+2024-08-27 14:23:53.8468|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7195/swagger/index.html - - -
+2024-08-27 14:23:54.0063|INFO|HouseUnitAPI.Middleware.LoggingMiddleware|Handling request: /swagger/index.html
+2024-08-27 14:23:55.5086|INFO|HouseUnitAPI.Middleware.LoggingMiddleware|Finished handling request.
+2024-08-27 14:23:55.5086|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7195/swagger/index.html - 200 - text/html;charset=utf-8 1669.6091ms
+2024-08-27 14:23:55.6124|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7195/swagger/index.js - - -
+2024-08-27 14:23:55.6202|INFO|HouseUnitAPI.Middleware.LoggingMiddleware|Handling request: /swagger/index.js
+2024-08-27 14:23:55.6202|INFO|HouseUnitAPI.Middleware.LoggingMiddleware|Finished handling request.
+2024-08-27 14:23:55.6202|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7195/swagger/index.js - 200 - application/javascript;charset=utf-8 16.0260ms
+2024-08-27 14:23:55.6442|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7195/_framework/aspnetcore-browser-refresh.js - - -
+2024-08-27 14:23:55.6442|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7195/_vs/browserLink - - -
+2024-08-27 14:23:55.6675|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7195/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript;+charset=utf-8 26.3157ms
+2024-08-27 14:23:55.6911|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7195/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 45.4721ms
+2024-08-27 14:23:56.4037|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7195/swagger/v1/swagger.json - - -
+2024-08-27 14:23:56.4037|INFO|HouseUnitAPI.Middleware.LoggingMiddleware|Handling request: /swagger/v1/swagger.json
+2024-08-27 14:23:56.5163|INFO|HouseUnitAPI.Middleware.LoggingMiddleware|Finished handling request.
+2024-08-27 14:23:56.5163|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7195/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 114.2766ms
+2024-08-27 14:25:28.0830|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7195/api/HouseUnit - application/json 119
+2024-08-27 14:25:28.0925|INFO|HouseUnitAPI.Middleware.LoggingMiddleware|Handling request: /api/HouseUnit
+2024-08-27 14:25:29.0527|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'HouseUnitAPI.Controllers.HouseUnitController.Create (HouseUnitAPI)'
+2024-08-27 14:25:29.0730|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Create", controller = "HouseUnit"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(HouseUnitAPI.ViewModels.HouseUnitDetails) on controller HouseUnitAPI.Controllers.HouseUnitController (HouseUnitAPI).
+2024-08-27 14:25:31.6954|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (117ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [HouseUnits] ([Address], [Features], [NumberOfFloors], [UnitType])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);
+2024-08-27 14:25:31.7577|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing CreatedAtActionResult, writing value of type 'HouseUnitAPI.Helpers.ExceptionHandling.ReturnResult`1[[HouseUnitAPI.ViewModels.ResponseViewHouseUnit, HouseUnitAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-27 14:25:31.7783|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action HouseUnitAPI.Controllers.HouseUnitController.Create (HouseUnitAPI) in 2701.2168ms
+2024-08-27 14:25:31.7783|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'HouseUnitAPI.Controllers.HouseUnitController.Create (HouseUnitAPI)'
+2024-08-27 14:25:31.7783|INFO|HouseUnitAPI.Middleware.LoggingMiddleware|Finished handling request.
+2024-08-27 14:25:31.7783|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7195/api/HouseUnit - 201 - application/json;+charset=utf-8 3701.0299ms
+2024-08-27 14:26:32.1521|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\shaibal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-27 14:26:32.3568|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7195
+2024-08-27 14:26:32.3568|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5195
+2024-08-27 14:26:32.3568|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-08-27 14:26:32.3568|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-08-27 14:26:32.3568|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\Documents\Personal\Learning\Repos\Boligmappa\tech-test-home-api\HouseUnitAPI\HouseUnitAPI
+2024-08-27 14:26:32.9306|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7195/swagger/index.html - - -
+2024-08-27 14:26:33.0141|INFO|HouseUnitAPI.Middleware.LoggingMiddleware|Handling request: /swagger/index.html
+2024-08-27 14:26:33.1041|INFO|HouseUnitAPI.Middleware.LoggingMiddleware|Finished handling request.
+2024-08-27 14:26:33.1041|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7195/swagger/index.html - 200 - text/html;charset=utf-8 178.7276ms
+2024-08-27 14:26:33.1182|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7195/_framework/aspnetcore-browser-refresh.js - - -
+2024-08-27 14:26:33.1182|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7195/swagger/index.js - - -
+2024-08-27 14:26:33.1182|INFO|HouseUnitAPI.Middleware.LoggingMiddleware|Handling request: /swagger/index.js
+2024-08-27 14:26:33.1182|INFO|HouseUnitAPI.Middleware.LoggingMiddleware|Finished handling request.
+2024-08-27 14:26:33.1182|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7195/swagger/index.js - 200 - application/javascript;charset=utf-8 7.1883ms
+2024-08-27 14:26:33.1318|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7195/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript;+charset=utf-8 13.5984ms
+2024-08-27 14:26:33.1619|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7195/_vs/browserLink - - -
+2024-08-27 14:26:33.1930|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7195/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 31.1874ms
+2024-08-27 14:26:33.7065|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7195/swagger/v1/swagger.json - - -
+2024-08-27 14:26:33.7158|INFO|HouseUnitAPI.Middleware.LoggingMiddleware|Handling request: /swagger/v1/swagger.json
+2024-08-27 14:26:33.8257|INFO|HouseUnitAPI.Middleware.LoggingMiddleware|Finished handling request.
+2024-08-27 14:26:33.8257|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7195/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 122.2451ms
+2024-08-27 14:27:11.2623|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7195/api/HouseUnit - application/json 119
+2024-08-27 14:27:11.2623|INFO|HouseUnitAPI.Middleware.LoggingMiddleware|Handling request: /api/HouseUnit
+2024-08-27 14:27:12.0196|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'HouseUnitAPI.Controllers.HouseUnitController.Create (HouseUnitAPI)'
+2024-08-27 14:27:12.0339|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Create", controller = "HouseUnit"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(HouseUnitAPI.ViewModels.HouseUnitDetails) on controller HouseUnitAPI.Controllers.HouseUnitController (HouseUnitAPI).
+2024-08-27 14:27:13.0083|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (41ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [HouseUnits] ([Address], [Features], [NumberOfFloors], [UnitType])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);
+2024-08-27 14:27:13.0499|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing CreatedAtActionResult, writing value of type 'HouseUnitAPI.ViewModels.ResponseViewHouseUnit'.
+2024-08-27 14:27:13.0691|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action HouseUnitAPI.Controllers.HouseUnitController.Create (HouseUnitAPI) in 1030.9936ms
+2024-08-27 14:27:13.0691|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'HouseUnitAPI.Controllers.HouseUnitController.Create (HouseUnitAPI)'
+2024-08-27 14:27:13.0691|INFO|HouseUnitAPI.Middleware.LoggingMiddleware|Finished handling request.
+2024-08-27 14:27:13.0691|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7195/api/HouseUnit - 201 - application/json;+charset=utf-8 1813.8253ms
+2024-08-27 14:27:53.3274|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 PUT https://localhost:7195/api/HouseUnit/7 - application/json 117
+2024-08-27 14:27:53.3274|INFO|HouseUnitAPI.Middleware.LoggingMiddleware|Handling request: /api/HouseUnit/7
+2024-08-27 14:27:53.3338|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'HouseUnitAPI.Controllers.HouseUnitController.Update (HouseUnitAPI)'
+2024-08-27 14:27:53.3338|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Update", controller = "HouseUnit"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, HouseUnitAPI.ViewModels.HouseUnitDetails) on controller HouseUnitAPI.Controllers.HouseUnitController (HouseUnitAPI).
+2024-08-27 14:27:53.4004|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (13ms) [Parameters=[@p4='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [HouseUnits] SET [Address] = @p0, [Features] = @p1, [NumberOfFloors] = @p2, [UnitType] = @p3
+OUTPUT 1
+WHERE [Id] = @p4;
+2024-08-27 14:27:53.4004|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'HouseUnitAPI.ViewModels.ResponseViewHouseUnit'.
+2024-08-27 14:27:53.4004|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action HouseUnitAPI.Controllers.HouseUnitController.Update (HouseUnitAPI) in 65.1367ms
+2024-08-27 14:27:53.4004|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'HouseUnitAPI.Controllers.HouseUnitController.Update (HouseUnitAPI)'
+2024-08-27 14:27:53.4004|INFO|HouseUnitAPI.Middleware.LoggingMiddleware|Finished handling request.
+2024-08-27 14:27:53.4004|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 PUT https://localhost:7195/api/HouseUnit/7 - 200 - application/json;+charset=utf-8 77.3330ms
